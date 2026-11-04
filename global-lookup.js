@@ -146,7 +146,7 @@
       ${js.map(j=>`<div class="multi-mobile-line"><strong>${esc(j.flag)} ${esc(j.name)}</strong>${resultCell(j,h)}</div>`).join('')}</section>`).join('')}</div>`;
     $('#multiCompareResults').innerHTML=totals+table+mobile;
   }
-  function sync(){save();drawOptions();drawResults()}
+  function sync(){const hlist=$('#multiHazardOptions'),jlist=$('#multiJurisdictionOptions');const hscroll=hlist.scrollTop,jscroll=jlist.scrollTop;save();drawOptions();hlist.scrollTop=hscroll;jlist.scrollTop=jscroll;drawResults()}
   hSearch.addEventListener('input',drawOptions);
   jSearch.addEventListener('input',drawOptions);
   root.addEventListener('change',ev=>{
