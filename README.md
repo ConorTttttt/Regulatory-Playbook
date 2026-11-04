@@ -8,11 +8,11 @@ An offline-ready, mobile-friendly reference for **international chemical hazard 
 - **[View the source guidebook file](./index.html)** — HTML containing the classification reference snapshot. Global lookup UI lives in `global-lookup.js` and `global-lookup.css`.
 - On a phone, a website served over HTTPS is more reliable than opening a local HTML file.
 
-## Chapters — Version 2.1
+## Chapters — Version 2.2
 
 1. **Classification lists:** 18 jurisdictions, mandatory vs conditional/advisory status, official sources and direct list downloads where available.
 2. **GHS editions:** jurisdiction-specific adoption, national standards, and transitions.
-3. **Hazard applicability:** search by H-statement or class and compare adoption across **all 18 jurisdictions** at once, with status totals, clickable filters, and source links. The original two-jurisdiction comparison remains under an expandable advanced section.
+3. **Hazard applicability:** select **multiple hazard classifications** (by class name or H-code) and **multiple jurisdictions** using searchable multi-select lists. A comparison matrix shows adopted, not adopted, conditional or unverified status in every selected cell, with source links. Use **Differences only** to show rows with differing confirmed statuses; unknown statuses are never counted as confirmed differences. On narrow screens the matrix becomes stacked cards. The original detailed two-jurisdiction view remains under Advanced.
 
 Includes country search, filters, local notes, favourites, dark mode, and JSON note import/export.
 
@@ -24,7 +24,7 @@ Open `index.html` directly or serve the repository directory:
 python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000` and open **03 Hazard classes → Global classification search**. Try `H227`, `H318`, or `EUH380`. Internet is required for external regulator links.
+Then visit `http://localhost:8000` and open **03 Hazard classes → Global classification comparison**. Search for H-codes (such as `H227` or `H318`), tick multiple classifications, choose jurisdictions, and inspect the comparison matrix. The selection is saved to your local browser. Internet is required for external regulator links.
 
 ## Publish on GitHub Pages
 
@@ -36,7 +36,7 @@ The service worker caches the app shell after the first successful HTTPS visit. 
 
 - `data.json` — country classification-list reference data.
 - `ghs_data.json` — GHS editions and hazard applicability reference data.
-- `global-lookup.js` and `global-lookup.css` — global adoption comparison UI and layout.
+- `global-lookup.js` and `global-lookup.css` — multi-classification / multi-jurisdiction comparison, search, selection and responsive matrix.
 - `docs/chapter-01.md` — initial quick-reference chapter.
 
 **Note:** The `index.html` file embeds a snapshot of the JSON data. Editing the separate JSON files does **not** automatically update the running application. Until the application is refactored to fetch JSON at runtime, update the embedded `DATA` and `GHS_DATA` values in `index.html` together with the exported JSON files.
