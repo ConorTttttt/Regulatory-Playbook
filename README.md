@@ -1,59 +1,67 @@
 # Regulatory Playbook
 
-An offline-ready, mobile-friendly reference for **international chemical hazard classification** (GHS, CLP, WHMIS and local implementation rules).
+**Version 3.0 — a multi-page, mobile-friendly GHS/CLP classification reference.**
 
-## Open the guidebook
+The guidebook now groups **18 jurisdictions under 16 classification regulatory frameworks**. For example, EU CLP covers the EU, EEA countries and Northern Ireland, but records regional adoption/transition differences explicitly. GB CLP remains a different regulation.
 
-- **[Open the app](./index.html)** — clone or download the complete repository, then open `index.html` (it loads two additional local lookup assets).
-- **[View the source guidebook file](./index.html)** — HTML containing the classification reference snapshot. Global lookup UI lives in `global-lookup.js` and `global-lookup.css`.
-- On a phone, a website served over HTTPS is more reliable than opening a local HTML file.
-
-## Chapters — Version 2.2
-
-1. **Classification lists:** 18 jurisdictions, mandatory vs conditional/advisory status, official sources and direct list downloads where available.
-2. **GHS editions:** jurisdiction-specific adoption, national standards, and transitions.
-3. **Hazard applicability:** select **multiple hazard classifications** (by class name or H-code) and **multiple jurisdictions** using searchable multi-select lists. A comparison matrix shows adopted, not adopted, conditional or unverified status in every selected cell, with source links. Use **Differences only** to show rows with differing confirmed statuses; unknown statuses are never counted as confirmed differences. On narrow screens the matrix becomes stacked cards. The original detailed two-jurisdiction view remains under Advanced.
-
-Includes country search, filters, local notes, favourites, dark mode, and JSON note import/export.
-
-## Run locally
-
-Open `index.html` directly or serve the repository directory:
+## Open locally from GitHub
 
 ```bash
-python -m http.server 8000
+git clone https://github.com/ConorTttttt/Regulatory-Playbook.git
+cd Regulatory-Playbook
+python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000` and open **03 Hazard classes → Global classification comparison**. Search for H-codes (such as `H227` or `H318`), tick multiple classifications, choose jurisdictions, and inspect the comparison matrix. The selection is saved to your local browser. Internet is required for external regulator links.
+Then open **http://localhost:8000**. To update an existing clone: `git pull origin main`, then reload.
 
-## Publish on GitHub Pages
+**A local web server is now required:** the pages load editable JSON reference data with `fetch`. Double-clicking the HTML file may be blocked by browser file-origin security.
 
-In **Settings → Pages**, choose **Deploy from a branch**, select **main**, then **/(root)** and Save. GitHub will give you the hosted URL. After publishing, open the site on a phone and use **Add to Home Screen** / **Install App** as offered by your browser.
+## Pages
 
-The service worker caches the app shell after the first successful HTTPS visit. Government source websites are not cached.
+| Page | Link | Purpose |
+|---|---|---|
+| Home | [index.html](index.html) | Dashboard for navigation and coverage |
+| Classification lists | [classification-lists.html](classification-lists.html) | Mandatory, conditional and advisory lists with official links |
+| GHS editions | [ghs-editions.html](ghs-editions.html) | Adopted GHS revisions and national implementation differences |
+| Compare classifications | [compare.html](compare.html) | Select multiple hazard classifications **and regulations**, compare matrix statuses, use Differences only |
+| Regulation explorer | [regulations.html](regulations.html) | Directory of regulatory frameworks |
+| Regulation details | [regulation.html?id=eu-clp](regulation.html?id=eu-clp) | Choose one regulation and see **all** adopted, not-adopted, conditional, regional-variation, and not-verified hazard classes |
 
-## Reference data
+The original all-in-one reference is preserved as `legacy-guidebook.html`.
 
-- `data.json` — country classification-list reference data.
-- `ghs_data.json` — GHS editions and hazard applicability reference data.
-- `global-lookup.js` and `global-lookup.css` — multi-classification / multi-jurisdiction comparison, search, selection and responsive matrix.
-- `docs/chapter-01.md` — initial quick-reference chapter.
+## Reference model
 
-**Note:** The `index.html` file embeds a snapshot of the JSON data. Editing the separate JSON files does **not** automatically update the running application. Until the application is refactored to fetch JSON at runtime, update the embedded `DATA` and `GHS_DATA` values in `index.html` together with the exported JSON files.
+- `data.json`: jurisdiction profiles, list status and official classification-list links.
+- `ghs_data.json`: GHS editions, hazard classes, jurisdiction-level status matrix, substance-agnostic hazard notes and source links.
+- `regulatory-schemes.json`: **regulation-to-jurisdiction mapping**, legal scope descriptions and grouping caveats.
+- `site.js`: shared data loading, page rendering, multi-selection and source panels.
+- `site.css`: shared responsive stylesheet.
+- `service-worker.js`: app-shell caching for offline use after the first successful online visit.
 
-## Regulatory cautions
+**Do not combine jurisdictions solely because they use the same GHS revision.** Regulation groups are based on the relevant law. EU CLP is grouped across the EU, Northern Ireland and EEA; regional implementation may still vary.
 
-**Reviewed 4 November 2026.** Reference information is not a substitute for checking current legislation, binding classification entries, substance-specific scope, effective dates, ATPs, and transitional rules.
+### Aggregate status rules
 
-- A mandatory classification list may cover only some hazard classes.
-- `Not adopted` applies to the stated regulatory scheme, not to a chemical or all possible sectors. `Not verified` is not an exclusion.
-- GHS revision number alone does not establish which optional building blocks a jurisdiction has implemented.
-- Some downloadable lists are non-binding compilations; consult legal sources before making regulatory decisions.
+For each regulatory group the app compares its constituent jurisdiction entries:
+
+- **Adopted / Not adopted / Conditional / Not verified:** shown when *all* covered regions have the same recorded status.
+- **Regional variation:** shown where any member jurisdiction's recorded status differs from another. Open the hazard details to inspect the underlying country statuses and official sources.
+- **Differences only:** shows a confirmed difference only when at least two selected regulations have different *confirmed* statuses (adopted, not adopted, conditional). Unverified or regionally mixed status is not independently treated as a confirmed difference.
+
+Status refers to **whether a hazard class/category is within a regulatory classification system**, not whether a particular substance or mixture carries that classification. The current hazard data includes grouped categories; a group's adoption status does not establish the status of each individual variant.
+
+### Editing reference data
+
+Unlike the earlier self-contained HTML app, the new pages read the JSON files directly. Changes to `regulatory-schemes.json`, `ghs_data.json`, and `data.json` are reflected after reloading (and cache refresh as needed). If you add a new jurisdiction, map it exactly once in the scheme JSON.
+
+## Host / install on mobile
+
+In GitHub **Settings → Pages**, deploy the `main` branch from `/(root)`. The resulting HTTPS site works in mobile browsers and can be added to the home screen. It caches application pages for offline browsing after initial load; regulatory websites linked from the application still require internet access.
+
+## Regulatory integrity
+
+**Reference data reviewed 4 November 2026.** Confirm current legislation, substance identity, harmonised entries, effective and transitional dates, hazard notes and sector scope before making classification or SDS decisions. A mandatory national classification list is different from an obligation to self-classify under GHS. `Not verified` is not an exclusion.
 
 ## Privacy
 
-No account, analytics service or backend is required. Favourites and personal notes are stored in the local browser. Export notes to preserve them before clearing browser storage or switching devices.
-
-## Deployment note
-
-GitHub Pages and installation are optional; this repository does not automatically enable Pages for you.
+No login, remote data storage or analytics. Colour theme and compare selections are stored in the browser via localStorage.

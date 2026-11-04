@@ -1,0 +1,200 @@
+{
+  "reviewed": "04 November 2026",
+  "explanation": "Groups reflect the applicable classification framework, not a claim that each covered region has identical amendments, implementation dates or classifications.",
+  "schemes": [
+    {
+      "id": "eu-clp",
+      "name": "EU CLP Regulation",
+      "short": "EU CLP",
+      "subtitle": "Regulation (EC) No 1272/2008",
+      "ids": [
+        "eu",
+        "eea",
+        "ni"
+      ],
+      "description": "Shared CLP framework for the EU, Northern Ireland and EEA countries. Regional incorporation dates and transition provisions may differ.",
+      "notice": "EEA incorporation dates and Northern Ireland arrangements must be checked. The aggregate status is marked 'Regional variation' whenever these jurisdictions differ.",
+      "category": "Mandatory harmonised classification"
+    },
+    {
+      "id": "gb-clp",
+      "name": "GB CLP / GB MCL",
+      "short": "GB CLP",
+      "subtitle": "Great Britain CLP and Mandatory Classification and Labelling List",
+      "ids": [
+        "gb"
+      ],
+      "description": "Separate Great Britain rules; do not automatically substitute an EU Annex VI entry.",
+      "notice": "Applies to England, Scotland and Wales, not Northern Ireland.",
+      "category": "Mandatory harmonised classification"
+    },
+    {
+      "id": "swiss-clp",
+      "name": "Swiss Chemicals Ordinance",
+      "short": "Swiss classification",
+      "subtitle": "Swiss chemicals classification and harmonised entries",
+      "ids": [
+        "ch"
+      ],
+      "description": "Swiss adoption of harmonised classifications with national implementation dates.",
+      "notice": "A current EU ATP need not yet be implemented in Switzerland.",
+      "category": "Mandatory harmonised classification"
+    },
+    {
+      "id": "turkiye-sea",
+      "name": "Türkiye SEA Regulation",
+      "short": "SEA",
+      "subtitle": "SEA Regulation and Annex 6",
+      "ids": [
+        "tr"
+      ],
+      "description": "National harmonised substance entries under Turkish SEA legislation.",
+      "notice": "Check amendments to Annex 6 and the governing Turkish legal text.",
+      "category": "Mandatory harmonised classification"
+    },
+    {
+      "id": "malaysia-class",
+      "name": "Malaysia CLASS / ICOP CHC",
+      "short": "CLASS",
+      "subtitle": "CLASS Regulations and ICOP CHC 2019",
+      "ids": [
+        "my"
+      ],
+      "description": "Malaysia's prescribed chemical classifications and hazard communication framework.",
+      "notice": "Listed entries must be checked against the current DOSH publication and its legal scope.",
+      "category": "Mandatory listed classifications"
+    },
+    {
+      "id": "korea-chemicals",
+      "name": "South Korea chemical classification",
+      "short": "Korean GHS",
+      "subtitle": "NICS and applicable workplace / chemical legislation",
+      "ids": [
+        "kr"
+      ],
+      "description": "Classification obligations and official entries for designated chemicals under applicable schemes.",
+      "notice": "Status varies with substance designation and governing regulation.",
+      "category": "Conditional / designated"
+    },
+    {
+      "id": "china-ghs",
+      "name": "China hazardous chemicals framework",
+      "short": "China GHS",
+      "subtitle": "GB standards and hazardous chemicals classification table",
+      "ids": [
+        "cn"
+      ],
+      "description": "Chinese GHS classification standards and published hazardous-chemical classification information.",
+      "notice": "The classification information table is not a universal harmonised list for all chemicals.",
+      "category": "Conditional / designated"
+    },
+    {
+      "id": "nz-hsno",
+      "name": "New Zealand HSNO",
+      "short": "HSNO",
+      "subtitle": "Hazardous Substances and New Organisms Act approvals",
+      "ids": [
+        "nz"
+      ],
+      "description": "New Zealand's HSNO approvals and GHS-based hazard classes.",
+      "notice": "Individual approvals can impose binding classifications; CCID is not universally binding.",
+      "category": "Approval dependent"
+    },
+    {
+      "id": "australia-whs",
+      "name": "Australia WHS / GHS",
+      "short": "Australia WHS",
+      "subtitle": "Work health and safety rules; HCIS reference database",
+      "ids": [
+        "au"
+      ],
+      "description": "Australia's workplace classification requirements based on GHS 7.",
+      "notice": "HCIS is advisory; a requirement to classify is not the same as a binding substance classification list.",
+      "category": "Self-classification / advisory list"
+    },
+    {
+      "id": "japan-ghs",
+      "name": "Japan GHS / JIS",
+      "short": "Japan JIS",
+      "subtitle": "JIS Z 7252/7253; NITE reference classifications",
+      "ids": [
+        "jp"
+      ],
+      "description": "Japanese classification standards with edition-specific transitions.",
+      "notice": "NITE government classifications are reference information, not automatically binding entries.",
+      "category": "Self-classification / advisory list"
+    },
+    {
+      "id": "canada-whmis",
+      "name": "Canada WHMIS",
+      "short": "WHMIS",
+      "subtitle": "Hazardous Products Regulations (HPR)",
+      "ids": [
+        "ca"
+      ],
+      "description": "Canada's workplace GHS implementation, with national building blocks and exclusions.",
+      "notice": "Environmental hazard classes are outside WHMIS HPR scope; other laws may apply.",
+      "category": "Self-classification / advisory list"
+    },
+    {
+      "id": "us-osha",
+      "name": "United States OSHA HazCom",
+      "short": "OSHA HCS",
+      "subtitle": "29 CFR 1910.1200 (Hazard Communication Standard)",
+      "ids": [
+        "us"
+      ],
+      "description": "US workplace hazard classification under OSHA HCS.",
+      "notice": "OSHA HazCom excludes environmental GHS classes; EPA or other regulatory schemes may still address environmental hazards.",
+      "category": "Classification criteria / no general list"
+    },
+    {
+      "id": "brazil-nr26",
+      "name": "Brazil NR-26 / ABNT",
+      "short": "NR-26",
+      "subtitle": "NR-26 and ABNT NBR 14725",
+      "ids": [
+        "br"
+      ],
+      "description": "Brazilian GHS workplace classification and hazard communication requirements.",
+      "notice": "Check the current version of ABNT NBR 14725 and NR-26.",
+      "category": "Classification criteria / no general list"
+    },
+    {
+      "id": "mexico-nom",
+      "name": "Mexico NOM-018-STPS",
+      "short": "NOM-018",
+      "subtitle": "NOM-018-STPS-2015",
+      "ids": [
+        "mx"
+      ],
+      "description": "Mexican workplace hazard communication and GHS classification.",
+      "notice": "The standard is not a generally binding substance classification catalogue.",
+      "category": "Classification criteria / no general list"
+    },
+    {
+      "id": "singapore-ss586",
+      "name": "Singapore SS 586 / WSH",
+      "short": "SS 586",
+      "subtitle": "Singapore Standards and workplace safety legislation",
+      "ids": [
+        "sg"
+      ],
+      "description": "Singapore GHS implementation under SS 586 and WSH requirements.",
+      "notice": "Confirm which SS 586 edition applies and the legislation making requirements enforceable.",
+      "category": "Classification criteria / no general list"
+    },
+    {
+      "id": "south-africa-hca",
+      "name": "South Africa HCA / SANS",
+      "short": "HCA / SANS",
+      "subtitle": "Hazardous Chemical Agents Regulations and SANS 10234",
+      "ids": [
+        "za"
+      ],
+      "description": "South Africa's workplace hazardous chemical classification framework.",
+      "notice": "The classification standard does not constitute a comprehensive mandatory national substance list.",
+      "category": "Classification criteria / no general list"
+    }
+  ]
+}

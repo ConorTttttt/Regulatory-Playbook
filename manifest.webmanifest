@@ -1,6 +1,6 @@
 {
-  "name": "Regulatory Guidebook — Chemical Classification Lists",
-  "short_name": "Regulatory Guide",
+  "name": "Regulatory Playbook — International Chemical Classification",
+  "short_name": "Regulatory Playbook",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
@@ -19,5 +19,6 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
-  ]
+  ],
+  "description": "International GHS and CLP regulatory reference, comparison and regulation explorer"
 }
