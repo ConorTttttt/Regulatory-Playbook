@@ -45,7 +45,7 @@
   const input = document.querySelector('#globalHazardQuery');
   const suggestion = document.querySelector('#globalSuggestions');
   const results = document.querySelector('#globalResults');
-  let selected = options.find(h=>h.id==='skincorr')||options[0];
+  let selected = options.find(h=>h.id==='flliq4')||options[0];
   let statusFilter = 'all';
   const order = ['a','x','c','?'];
   const labels = {a:'Adopted',x:'Not adopted',c:'Conditional', '?':'Not verified'};
