@@ -43,7 +43,7 @@
 .multi-legend{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 13px}
 .multi-status{display:inline-block;max-width:100%;border-radius:6px;padding:5px 8px;font-size:10px;font-weight:780;line-height:1.2;border:1px solid transparent;white-space:normal;text-align:left}
 .multi-status.a{background:var(--green-bg);border-color:#31a67944;color:var(--green)}
-.multi-status.x{background:var(--red-bg);border-color:#dd555533;color:var(--red)}
+.multi-status.x{background:color-mix(in srgb,#d25151 10%,var(--surface));border-color:#dd555533;color:#b13f3f}
 .multi-status.c{background:var(--amber-bg);border-color:#da992533;color:var(--amber)}
 .multi-status.q{background:var(--gray-bg);border-color:var(--line);color:var(--sub)}
 .multi-totals{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px}
