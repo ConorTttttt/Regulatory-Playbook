@@ -8,7 +8,7 @@
   if (!original || !notes) return;
   const terms = {
     expl:'H200 H201 H202 H203 H204 H205 H206 H207 H208', desens:'H206 H207 H208',
-    flgas:'H220', flgas1b:'H221', flgas2:'H221', aerosol:'H222 H223', aerosol3:'H229',
+    flgas:'H220', flgas1b:'H221', flgas2:'H221', aerosol:'H222 H223 H229', aerosol3:'Aerosol 3 non-flammable',
     oxidgas:'H270', pressure:'H280 H281', flliq:'H224 H225 H226', flliq4:'H227', flsolid:'H228',
     selfreact:'H240 H241 H242', pyro:'H250', selfheat:'H251 H252', waterreact:'H260 H261',
     oxidliq:'H271 H272', oxidsol:'H271 H272', organicper:'H240 H241 H242', metcorr:'H290',
