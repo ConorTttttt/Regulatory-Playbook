@@ -1,0 +1,457 @@
+{
+  "reviewed": "04 November 2026",
+  "jurisdictions": [
+    {
+      "id": "eu",
+      "name": "European Union",
+      "flag": "🇪🇺",
+      "region": "Europe",
+      "status": "mandatory",
+      "list": "CLP Annex VI, Table 3",
+      "source": "ECHA / European Commission",
+      "short": "Harmonised substance classifications are binding for the hazard classes covered by the Annex VI entry.",
+      "detail": "Use harmonised classifications for the relevant substance identity, including applicable notes, SCLs, ATEs and M-factors. Assess hazard classes not covered by the harmonised entry separately. An ECHA spreadsheet is a convenient compilation, not itself the legally binding instrument.",
+      "caution": "Check each ATP’s application date. An ATP can be adopted but not yet mandatory.",
+      "links": [
+        [
+          "ECHA Annex VI table & Excel download",
+          "https://echa.europa.eu/information-on-chemicals/annex-vi-to-clp",
+          "list"
+        ],
+        [
+          "CLP consolidated legislation — Annex VI",
+          "https://eur-lex.europa.eu/eli/reg/2008/1272",
+          "law"
+        ],
+        [
+          "ECHA CHEM database",
+          "https://chem.echa.europa.eu/",
+          "database"
+        ]
+      ]
+    },
+    {
+      "id": "eea",
+      "name": "EEA: Norway, Iceland & Liechtenstein",
+      "flag": "🇳🇴",
+      "region": "Europe",
+      "status": "mandatory",
+      "list": "EU CLP Annex VI (EEA implementation)",
+      "source": "ECHA / EEA national authorities",
+      "short": "EU CLP harmonised classifications apply under the EEA framework, subject to relevant incorporation and commencement.",
+      "detail": "Check the relevant national implementing provisions, EEA incorporation and entry-into-force of later ATP amendments. Not all EU adoption and EEA implementation dates necessarily coincide.",
+      "caution": "EEA applicability and transitional timing may require jurisdiction-specific verification.",
+      "links": [
+        [
+          "EU Annex VI list & ECHA Excel",
+          "https://echa.europa.eu/information-on-chemicals/annex-vi-to-clp",
+          "list"
+        ],
+        [
+          "EEA/CLP information — ECHA",
+          "https://echa.europa.eu/regulations/clp/understanding-clp",
+          "guidance"
+        ]
+      ]
+    },
+    {
+      "id": "gb",
+      "name": "United Kingdom — Great Britain",
+      "flag": "🇬🇧",
+      "region": "Europe",
+      "status": "mandatory",
+      "list": "GB Mandatory Classification and Labelling List (GB MCL)",
+      "source": "Health and Safety Executive (HSE)",
+      "short": "GB MCL entries are legally binding in England, Scotland and Wales.",
+      "detail": "Apply listed mandatory classifications when classifying substances and in the relevant ingredient-based mixture calculation. Other hazards require assessment. GB MCL can differ from EU Annex VI.",
+      "caution": "Check HSE revisions and the GB-specific technical notes; do not substitute EU Annex VI automatically.",
+      "links": [
+        [
+          "Download GB MCL list (official XLSX)",
+          "https://www.hse.gov.uk/chemical-classification/assets/docs/mcl-list.xlsx",
+          "direct"
+        ],
+        [
+          "HSE GB MCL publication page",
+          "https://www.hse.gov.uk/chemical-classification/classification/mcl-list.htm",
+          "list"
+        ],
+        [
+          "HSE GB classification guidance",
+          "https://www.hse.gov.uk/chemical-classification/classification/harmonised-classification-self-classification.htm",
+          "guidance"
+        ]
+      ]
+    },
+    {
+      "id": "ni",
+      "name": "United Kingdom — Northern Ireland",
+      "flag": "🇬🇧",
+      "region": "Europe",
+      "status": "mandatory",
+      "list": "EU CLP Annex VI (Northern Ireland)",
+      "source": "ECHA / HSE",
+      "short": "Northern Ireland follows the EU CLP regime rather than the GB MCL scheme.",
+      "detail": "For classification and labelling in Northern Ireland, check EU CLP provisions and EU Annex VI, not the GB MCL List. Verify the current position under the Windsor Framework and any applicable transitional measures.",
+      "caution": "Do not treat the UK as one uniform classification jurisdiction.",
+      "links": [
+        [
+          "EU Annex VI list & Excel",
+          "https://echa.europa.eu/information-on-chemicals/annex-vi-to-clp",
+          "list"
+        ],
+        [
+          "EU CLP legal text",
+          "https://eur-lex.europa.eu/eli/reg/2008/1272",
+          "law"
+        ],
+        [
+          "HSE GB / NI regulatory overview",
+          "https://www.hse.gov.uk/chemical-classification/brexit.htm",
+          "guidance"
+        ]
+      ]
+    },
+    {
+      "id": "ch",
+      "name": "Switzerland",
+      "flag": "🇨🇭",
+      "region": "Europe",
+      "status": "mandatory",
+      "list": "Swiss CLP Ordinance, Annex VI",
+      "source": "Swiss Chemical Notification Authority",
+      "short": "Harmonised classifications adopted in Swiss legislation must be followed.",
+      "detail": "The Swiss authority confirms Annex VI of the Swiss CLP Ordinance specifies mandatory classifications for certain substances. Swiss provisions incorporate selected EU CLP measures, so use the Swiss legal version that applies on the relevant date.",
+      "caution": "The EU Annex VI spreadsheet is a reference; verify Swiss adoption and timing before using a newer ATP.",
+      "links": [
+        [
+          "Swiss authority — classification / Annex VI",
+          "https://www.anmeldestelle.admin.ch/en/classification-2",
+          "list"
+        ],
+        [
+          "ECHA harmonised list (cross-reference)",
+          "https://echa.europa.eu/information-on-chemicals/annex-vi-to-clp",
+          "reference"
+        ]
+      ]
+    },
+    {
+      "id": "tr",
+      "name": "Türkiye",
+      "flag": "🇹🇷",
+      "region": "Europe",
+      "status": "mandatory",
+      "list": "SEA Regulation — Annex 6",
+      "source": "Ministry of Environment / Official Gazette",
+      "short": "Turkish SEA harmonised substance classifications apply where covered by national Annex 6.",
+      "detail": "Use the Turkish SEA regulation and its current Annex 6 (Ek-6), including subsequent amendments. KİMVES may help with substance information but is not a replacement for the authoritative harmonised list.",
+      "caution": "The ministry’s downloadable consolidated annex document is dated 2020; confirm whether later updates affect the substance.",
+      "links": [
+        [
+          "SEA legal text — Official Gazette",
+          "https://www.resmigazete.gov.tr/eskiler/2013/12/20131211M1-1.htm",
+          "law"
+        ],
+        [
+          "Ministry consolidated annexes — 2020 DOC (historical)",
+          "https://webdosya.csb.gov.tr/db/cygm/icerikler/sea-konsol-de-ekler-20201211073004.doc",
+          "archive"
+        ],
+        [
+          "Ministry legislation index — check newer versions",
+          "https://cygm.csb.gov.tr/yonetmelikler-440",
+          "guidance"
+        ]
+      ]
+    },
+    {
+      "id": "my",
+      "name": "Malaysia",
+      "flag": "🇲🇾",
+      "region": "Asia-Pacific",
+      "status": "mandatory",
+      "list": "ICOP CHC (Amendment) 2019 — Part 1",
+      "source": "Department of Occupational Safety and Health (DOSH)",
+      "short": "The classifications in ICOP Part 1 are mandatory minimum classifications for listed substances.",
+      "detail": "DOSH specifies that a supplier must apply the listed classification. Additional hazards or more severe classifications may be applied on supporting data; requests to remove listed hazards or use a less severe category are subject to the Director General’s determination.",
+      "caution": "Read notes, substance conditions and concentration-dependent classifications; Part 1 is not exhaustive.",
+      "links": [
+        [
+          "Download 2019 Part 1 list (official PDF)",
+          "https://dosh.gov.my/wp-content/uploads/2026/04/Industry-Code-of-Practice-on-Chemical-Classification-and-Hazard-Communication-Amendment-2019.pdf",
+          "direct"
+        ],
+        [
+          "DOSH chemical management / ICOP framework",
+          "https://dosh.gov.my/en/pengurusan-kimia/",
+          "guidance"
+        ],
+        [
+          "DOSH CLASS FAQ — binding classifications",
+          "https://dosh.gov.my/en/hubungi-kami/soalan-lazim-hubungi-kami/",
+          "guidance"
+        ]
+      ]
+    },
+    {
+      "id": "kr",
+      "name": "South Korea",
+      "flag": "🇰🇷",
+      "region": "Asia-Pacific",
+      "status": "conditional",
+      "list": "NICS classification & labelling — designated chemicals",
+      "source": "National Institute of Chemical Safety (NICS)",
+      "short": "Prescribed classifications exist for designated chemicals; legal force depends on the applicable statute and chemical.",
+      "detail": "Consult the NICS K-REACH search together with the current Classification and Labelling Regulation and its annexes (notably substance schedules). The regulatory schedules are not a comprehensive classification for every chemical and do not displace separate workplace SDS requirements.",
+      "caution": "The current NICS classification regulation was amended effective 18 September 2026; check the applicable version.",
+      "links": [
+        [
+          "NICS searchable classification list",
+          "https://kreach.me.go.kr/repwrt/ghs/ghsList.do",
+          "list"
+        ],
+        [
+          "Classification and labelling regulation (2026)",
+          "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000285186",
+          "law"
+        ],
+        [
+          "Workplace SDS classification standard",
+          "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000278320",
+          "law"
+        ]
+      ]
+    },
+    {
+      "id": "cn",
+      "name": "China",
+      "flag": "🇨🇳",
+      "region": "Asia-Pacific",
+      "status": "conditional",
+      "list": "Hazardous Chemicals Catalogue — classification information table",
+      "source": "Ministry of Emergency Management (MEM)",
+      "short": "Official classifications are important within the Hazardous Chemicals Catalogue and related schemes.",
+      "detail": "The MEM hazardous chemicals classification information table is a substance-by-substance official reference tied to the hazardous chemicals regulatory system. Wider GB standards, SDS and classification duties apply; this is not a national equivalent of EU Annex VI for every substance.",
+      "caution": "The 2015 catalogue has received later additions, including a five-substance addition announced in April 2026. Check amendments.",
+      "links": [
+        [
+          "Download MEM classification table (PDF, 389 pages)",
+          "https://www.mem.gov.cn/fw/cxfw/202605/W020260501391249442943.pdf",
+          "direct"
+        ],
+        [
+          "MEM classification table landing page",
+          "https://www.mem.gov.cn/fw/cxfw/202605/t20260501_602351.shtml",
+          "list"
+        ],
+        [
+          "MEM 2026 catalogue addition",
+          "https://www.mem.gov.cn/gk/zfxxgkpt/fdzdgknr/202604/t20260429_602103.shtml",
+          "law"
+        ]
+      ]
+    },
+    {
+      "id": "nz",
+      "name": "New Zealand",
+      "flag": "🇳🇿",
+      "region": "Asia-Pacific",
+      "status": "conditional",
+      "list": "HSNO individual approvals / EPA CCID",
+      "source": "Environmental Protection Authority (EPA)",
+      "short": "Individual HSNO approvals can impose legal conditions; many CCID entries under group standards are informational.",
+      "detail": "Identify the applicable approval or group standard first. EPA states that CCID classifications for chemicals under group standards are not legally binding classifications. Individually approved substances may have approval-specific legal conditions.",
+      "caution": "Do not assume every CCID classification is legally mandatory.",
+      "links": [
+        [
+          "EPA approved substances with controls",
+          "https://www.epa.govt.nz/database-search/approved-hazardous-substances-with-controls/",
+          "list"
+        ],
+        [
+          "EPA CCID chemical classifications",
+          "https://www.epa.govt.nz/database-search/chemical-classification-and-information-database-ccid/",
+          "database"
+        ],
+        [
+          "EPA database explanation",
+          "https://www.epa.govt.nz/database-search/using-our-hazardous-substance-databases/",
+          "guidance"
+        ]
+      ]
+    },
+    {
+      "id": "au",
+      "name": "Australia",
+      "flag": "🇦🇺",
+      "region": "Asia-Pacific",
+      "status": "advisory",
+      "list": "Hazardous Chemical Information System (HCIS)",
+      "source": "Safe Work Australia",
+      "short": "HCIS is an official reference, not a nationally mandatory substance classification list.",
+      "detail": "Workplace hazard classification is required under applicable work health and safety law; Safe Work Australia states that Australia does not have a mandatory national classification list. Classifiers remain responsible for justified hazard assessments.",
+      "caution": "Do not conflate HCIS entries with binding prescribed harmonised classifications.",
+      "links": [
+        [
+          "HCIS database",
+          "https://hcis.safeworkaustralia.gov.au/",
+          "database"
+        ],
+        [
+          "Safe Work Australia classification guidance",
+          "https://www.safeworkaustralia.gov.au/safety-topic/hazards/chemicals/classifying-chemicals/classifying-chemicals-australia",
+          "guidance"
+        ]
+      ]
+    },
+    {
+      "id": "jp",
+      "name": "Japan",
+      "flag": "🇯🇵",
+      "region": "Asia-Pacific",
+      "status": "advisory",
+      "list": "NITE government GHS classification results",
+      "source": "NITE / Japanese government",
+      "short": "Japanese government substance classifications are reference information rather than universally binding results.",
+      "detail": "Government GHS results help inform chemical hazard assessment. Suppliers must meet separate legal obligations for classification, labels and SDSs under applicable Japanese acts, which may designate particular substances.",
+      "caution": "Check publication year, substance identity and the current Japanese GHS implementation.",
+      "links": [
+        [
+          "NITE GHS classification database",
+          "https://www.nite.go.jp/en/chem/ghs/",
+          "database"
+        ],
+        [
+          "MHLW chemical safety guidance",
+          "https://www.mhlw.go.jp/stf/newpage_11237.html",
+          "guidance"
+        ]
+      ]
+    },
+    {
+      "id": "ca",
+      "name": "Canada",
+      "flag": "🇨🇦",
+      "region": "Americas",
+      "status": "advisory",
+      "list": "Health Canada Hazardous Substance Assessments",
+      "source": "Health Canada",
+      "short": "Official assessments support WHMIS classifications but are not binding substance-list entries.",
+      "detail": "Hazardous Products Regulations and WHMIS require suppliers to classify their products. Health Canada substance assessments provide helpful analysis but do not replace suppliers’ legal classification duties.",
+      "caution": "Separate schedule-based rules and ingredient disclosure requirements should not be mistaken for harmonised GHS entries.",
+      "links": [
+        [
+          "Health Canada Hazardous Substance Assessments",
+          "https://www.canada.ca/en/health-canada/services/environmental-workplace-health/occupational-health-safety/workplace-hazardous-materials-information-system/hazardous-substance-assessments.html",
+          "database"
+        ],
+        [
+          "WHMIS regulatory overview",
+          "https://www.canada.ca/en/health-canada/services/environmental-workplace-health/occupational-health-safety/workplace-hazardous-materials-information-system.html",
+          "guidance"
+        ]
+      ]
+    },
+    {
+      "id": "us",
+      "name": "United States",
+      "flag": "🇺🇸",
+      "region": "Americas",
+      "status": "none",
+      "list": "OSHA HazCom — criteria (no general list)",
+      "source": "Occupational Safety and Health Administration (OSHA)",
+      "short": "HazCom requires hazard classification, but has no general Annex VI-style mandatory national classification catalogue.",
+      "detail": "Manufacturers/importers classify chemical hazards using OSHA Hazard Communication Standard criteria. Certain identified agents, lists and statutory provisions can affect particular hazards, but they are not a universal prescribed GHS substance table.",
+      "caution": "Check OSHA HCS amendments and deadlines; other agencies regulate specific chemical categories.",
+      "links": [
+        [
+          "OSHA HazCom health criteria (Appendix A)",
+          "https://www.osha.gov/hazcom/appendix-a",
+          "law"
+        ],
+        [
+          "OSHA hazard communication overview",
+          "https://www.osha.gov/hazcom",
+          "guidance"
+        ]
+      ]
+    },
+    {
+      "id": "br",
+      "name": "Brazil",
+      "flag": "🇧🇷",
+      "region": "Americas",
+      "status": "none",
+      "list": "NR-26 / ABNT NBR 14725 — criteria",
+      "source": "Ministry of Labour and Employment",
+      "short": "Classification rules apply, but no single general Brazilian mandatory substance list is identified.",
+      "detail": "NR-26 addresses workplace hazard communication and refers to international harmonised classifications in specified circumstances. It does not itself create a comprehensive binding substance-by-substance national classification table.",
+      "caution": "ABNT standards, local rules, and permitted international lists must be checked for applicable classifications and SDSs.",
+      "links": [
+        [
+          "Brazil NR-26 regulation",
+          "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-26-nr-26",
+          "law"
+        ]
+      ]
+    },
+    {
+      "id": "mx",
+      "name": "Mexico",
+      "flag": "🇲🇽",
+      "region": "Americas",
+      "status": "none",
+      "list": "NOM-018-STPS-2015 — criteria",
+      "source": "Mexican Secretariat of Labour and Social Welfare",
+      "short": "Workplace classification is prescribed; no general mandatory harmonised national chemical list is identified.",
+      "detail": "NOM-018-STPS-2015 governs workplace hazard communication including classification, hazard information and SDSs. The workplace chemical inventory is different from a mandatory nationally harmonised substance classification list.",
+      "caution": "Verify updates to NOM-018 and sector-specific rules.",
+      "links": [
+        [
+          "NOM-018-STPS-2015 official standard",
+          "https://platiica.economia.gob.mx/normalizacion/nom-018-stps-2015/",
+          "law"
+        ]
+      ]
+    },
+    {
+      "id": "sg",
+      "name": "Singapore",
+      "flag": "🇸🇬",
+      "region": "Asia-Pacific",
+      "status": "none",
+      "list": "SS 586 standard and WSH framework",
+      "source": "Ministry of Manpower (MOM)",
+      "short": "GHS classification and SDS standards apply, but no general mandatory harmonised national substance table is identified.",
+      "detail": "SS 586 contains classification and hazard communication rules used under Singapore regulatory requirements. Distinct controlled-chemical schedules may impose other obligations; these should not be treated as a comprehensive harmonised classification list.",
+      "caution": "Check applicable SS 586 edition and mandatory transition dates.",
+      "links": [
+        [
+          "MOM revised SS 586 circular (PDF)",
+          "https://www.mom.gov.sg/maintenance/-/media/mom/documents/safety-health/circulars/2023/circular-20230406-adoption-of-revised-singapore-standard-ss586-specification.pdf",
+          "guidance"
+        ]
+      ]
+    },
+    {
+      "id": "za",
+      "name": "South Africa",
+      "flag": "🇿🇦",
+      "region": "Africa",
+      "status": "none",
+      "list": "Hazardous Chemical Agents Regulations / SANS 10234",
+      "source": "Department of Employment and Labour",
+      "short": "GHS workplace classification is required, without a comprehensive national Annex VI-style substance list.",
+      "detail": "The Hazardous Chemical Agents Regulations establish duties for classification and hazard communication. SANS 10234 provides classification methods, not a general legally prescribed substance-by-substance classification table.",
+      "caution": "Check current regulations, amendments and incorporated standards.",
+      "links": [
+        [
+          "Hazardous Chemical Agents Regulations 2021 (PDF)",
+          "https://www.labour.gov.za/DocumentCenter/Regulations%20and%20Notices/Regulations/Occupational%20Health%20and%20Safety/Regulations%20for%20Hazardous%20Chemical%20Agents%202021.pdf",
+          "law"
+        ]
+      ]
+    }
+  ]
+}
